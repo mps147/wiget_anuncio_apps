@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Modal APPS</title>
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>    
+       
+        
+        <style>
+            #an-body{
+                display: block;
+                height: 70px;
+                border-bottom: 1px solid #ccc;
+                background-color: #f5f5f5;
+            }
+            
+            #an-image{
+                70px;
+            }
+            
+            #an-button{
+                display: block;
+                position: relative;
+                top: 35%;
+                margin-right: 5px;
+            }
+            
+            #an-button > button{
+                background-color: #f5f5f5;
+                border: none;
+            }
+            
+            #an-image{
+                display: block;
+                position: relative;
+                top: 15%;
+            }
+            
+            #an-name{
+                padding: 0px;
+            }
+            
+            #an-name > h2{
+                font-size: 0.9em;
+                margin-bottom: 0px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="container-fluid">  
+            
+            <div id="an-body" class="row">
+                
+                <div id="an-button" class="col-xs-1">
+                    
+                    <button><i class="glyphicon glyphicon-remove"></i></button>     
+                </div>  
+                
+                <div class="col-xs-3"  id="an-image">
+                    
+                    <picture>
+                        
+                        <a href="#">
+                            <img src="assets/images/android.png" alt="imagem anúncio do aplicativo" title="imagem do aplicativo"/>
+                        </a>
+                    </picture>
+                </div>
+                
+                <div class="col-xs-5"  id="an-name">    
+                    
+                    <h2>
+                        
+                        Baixe para Android/IOS
+                    </h2>
+                    
+                    <p>
+                        
+                        Aplicativo gratuito.
+                    </p>
+                </div>
+                
+                <div class="col-xs-5"  id="an-name">    
+                    
+                    
+                </div>
+            </div>    
+        </div>
+        
+        <section class="container-fluid">
+            <article>
+                <p>
+                    
+                    Lorem ipsum nibh augue nibh habitasse fringilla nisi taciti ac nec vulputate mattis senectus torquent nullam a purus, metus imperdiet nam sociosqu et placerat nulla conubia tristique potenti himenaeos dictumst cubilia fermentum odio. torquent commodo magna etiam turpis conubia donec potenti egestas leo aliquam cubilia justo velit nisl, venenatis pharetra eu quisque pellentesque ut ultricies dui sed fringilla non hendrerit himenaeos. aliquam ornare donec phasellus nisl fermentum diam ac sed mattis litora per tempor scelerisque tortor, cursus ultrices conubia fusce quisque senectus adipiscing quis pulvinar sed turpis lacinia. scelerisque ad dapibus donec senectus nostra aenean ultricies class, scelerisque molestie neque sociosqu morbi semper enim nisl, massa aliquet eleifend massa ultrices dictumst dapibus. 
+                </p>
+            </article>
+        </section>
+        
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="application/javascript"></script>
+        <script>
+            $(document).ready(function(){
+               $('#an-button').click(function(ev){
+                ev.preventDefault();
+                $('#an-body').hide();     
+               });
+            });
+        </script>
+    </body>
+</html>

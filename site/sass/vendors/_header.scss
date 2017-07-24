@@ -1,0 +1,71 @@
+header{
+	background: #e6e6e6;
+	padding-top: 10px;
+	height: 400px;
+	border: solid 1px #000;
+	margin-bottom: 30px;
+	//Social ICONS
+	> .icons {
+		background: #fff;
+		margin-bottom: 10px;
+		>.social-icons{
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-sm-column-offset(4);
+			@include make-md-column(2);
+			@include make-md-column-offset(5);
+			
+			text-align: center;
+			> a{				
+				margin-right: 10px;
+				padding-top: 10px;
+			}
+			> .google-plus:hover{
+				color:#cc0000;
+			}
+			>.google-plus{
+				color: #e14425;
+			}
+		}
+	}
+	//Logo and Tell
+	> .row{
+		> .logo{
+			@include make-xs-column(6);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			padding: 0px 15px;
+			margin-bottom: 10px;
+		}
+		> .tell{
+			@include make-xs-column(6);
+			@include make-sm-column(6);
+			@include make-md-column(9);
+
+			> p{
+				font-family: $font_default;
+				font-size: 14px;
+				font-weight: bold;
+				float: right;
+				margin: 0px;
+			}
+		}
+	}
+	> menu{
+		padding-left: 0px;
+		> nav{
+			> #navbar{
+				> ul{
+					>li{
+						> a{						
+							font-weight: bold;
+							font-size: 16px;
+							color: #000000;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
